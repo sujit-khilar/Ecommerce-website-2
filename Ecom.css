@@ -1,0 +1,411 @@
+*{
+   font-family: "Roboto", sans-serif;
+   scroll-behavior: smooth;
+}
+
+body{
+   margin: 0;
+   padding: 0;
+   background-color: rgb(178, 196, 212);
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(1, 1, 21);
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.logo{
+   margin-left: 2rem;
+   font-size: 1rem;
+   color: rgb(251, 185, 5);
+}
+
+nav ul{
+   display: flex;
+   align-items: center;
+   list-style: none;
+   margin-right: 1rem;
+}
+
+ul li a{
+   text-decoration: none;
+   margin-inline: 1rem;
+   font-size: 1rem;
+   color: white;
+}
+
+ul li a:hover, ul li a.active{
+   /* color: rgb(3, 212, 212); */
+   color: #fbb905;
+   font-weight: 600;
+}
+
+.icon{
+   display: none;
+   align-items: center;
+   font-size: 2rem;
+   margin-right: 1rem;
+}
+
+.main{
+   display: flex;
+   justify-content: space-around;
+   margin-top: 10rem;
+}
+
+.mainText h1{
+   font-size: 4rem;
+   color: #0aae01;
+}
+
+.mainText h2{
+   font-size: 2rem;
+}
+
+.mainText a{
+   height: 2rem;
+   background-color: #be3be6bf;
+   color: white;
+   font-size: 1rem;
+   border: none;
+   border-radius: 1rem;
+   padding: .5rem 3rem;
+   text-decoration: none;
+}
+
+.cards{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin-top: 1rem;
+}
+
+.cards .card{
+   margin-inline: 1rem;
+   text-align: center;
+}
+
+.card i{
+   color: rgb(251, 185, 5);
+   position: relative;
+   top: -1rem;
+}
+
+.card h3{
+   margin-top: 0.3rem;
+}
+
+.card img{
+   width: 27rem;
+   height: 32rem;
+}
+
+.head{
+   padding: 55px;
+   text-align: center;
+}
+
+.head span{
+   color: #0aae01;   
+}
+
+.reviews{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.reviews .rcard{
+   width: 20rem;
+   height: 16rem;
+   background-color: white;
+   text-align: center;
+   padding: 1rem;
+   margin: 1rem;
+   border-radius: 15px;
+}
+
+.rcard:hover{
+   background-color: #2d4a76ac;
+   transition: 1s ease;
+   color: white;
+   cursor: pointer;
+}
+
+.rcard img{
+   width: 42%;
+   border-radius: 50%;
+}
+
+.rcard button{
+   width: 6rem;
+   height: 2rem;
+   background-color: #be3be6bf;
+   color: white;
+   border: none;
+   font-size: 1rem;
+   margin-top: 1rem;
+   border-radius: 1rem;
+}
+
+.read{
+   box-sizing: border-box;
+}
+.blog{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.blog .blogcard{
+   width: 36rem;
+   text-align: center;
+   /* background-color: #fbb905; */
+   background-color: white;
+   margin: 1rem;
+   border-radius: 1rem;
+   padding: 1rem;
+}
+
+.blogcard img{
+   width: 80%;
+   border-radius: .5rem;
+}
+
+.blogcard a{
+   padding: 4px 20px;
+   background-color: #fbb905;
+   color: white;
+   font-size: 1rem;
+   text-decoration: none;
+   border-radius: 89% 73% 46% 42%;
+}
+
+.blogcard:hover{
+   background-color: #2d4a76ac;
+   color: white;
+   transition: 1s ease;
+   cursor: pointer;
+}
+
+.connect{
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.connect input{
+   width: 24rem;
+   padding: 0.5rem;
+   font-size: 18px;
+   background-color: transparent;
+   margin-top: 1rem;
+   border: 2px solid rgba(0, 0, 0, 0.345);
+   border-radius: 10px;
+   color: white;
+}
+
+::placeholder{
+   color: white;
+}
+
+.connect button{
+   width: 8rem;
+   height: 2rem;
+   background-color: #be3be6bf;
+   color: #fff;
+   font-size: 1rem;
+   border: none;
+   margin-top: 1rem;
+   cursor: pointer;
+   border-radius: 24%;
+}
+
+.footer{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   background-color: black;
+   padding: 3rem;
+   margin-top: 33px;
+   color: white;
+}
+
+/* item Page css */
+.itemPage{
+   display: flex;
+   display: none;
+   margin-top: 2rem;
+   margin-left: 1.5rem;
+}
+
+.itemPage img{
+   width: 25rem;
+}
+
+.itemPage .itemText{
+   margin-inline: 1.5rem;
+}
+
+.itemText h2{
+   color: #0aae01;
+}
+
+.itemPage input{
+   width: 2rem;
+   padding: .25rem;
+   font-size: 1rem;
+}
+
+.itemText a{
+   text-decoration: none;
+   color: white;
+   background-color: rgb(251, 185, 5);
+   padding: 0.25rem 1rem;
+   font-size: 1rem;
+   cursor: pointer;
+}
+
+/* buyPage */
+
+.buyPage{
+   display: none;
+   width: 40%;
+   background-color: white;
+   padding: 1rem;
+   position: absolute;
+   left: 30%;
+   right: 30%;
+   top: 15%;
+   border-radius: .5rem;
+}
+
+.buyText{
+   margin-top: 3rem;
+}
+
+.buyText input{
+   width: 95%;
+   padding: 0.5rem;
+   border: 2px solid black;
+   margin-top: .5rem;
+   font-size: 1rem;
+}
+
+.buyPage .cross{
+   position: absolute;
+   top: 0;
+   left: 0;
+   padding: 0.5rem;
+   background-color: #fbb905;
+   border-radius: .5rem;
+   cursor: pointer;
+}
+
+.buyText button{
+   width: 7rem;
+   height: 2rem;
+   background-color: #be3be6bf;
+   color: white;
+   font-size: 1rem;
+   border: none;
+   margin-top: 1rem;
+   cursor: pointer;
+}
+
+.buyText select{
+   padding: 0.25rem;
+   font-size: 1rem;
+}
+
+@media only screen and (max-width:600px){
+   nav ul{
+      display: none;
+   }
+
+   .icon{
+      display: flex;
+      cursor: pointer;
+   }
+
+   .showData{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 3.4rem;
+      background-color: #448615af;
+      width: 100%;
+      height: 15rem;
+      gap: 1rem;
+      padding: 0%;
+      text-align: center;
+   }
+
+   .mainText h1{
+      font-size: 2rem;
+   }
+   .mainText h2{
+      font-size: 1rem;
+   }
+
+   .card img{
+      width: 80%;
+   }
+
+   .connect input{
+      width: 65%;
+   }
+
+   .itemPage{
+      display: flex;
+      flex-direction: column;
+      display: none;
+      margin-top: 2rem;
+      margin-left: 1rem;
+   }
+
+   .buyPage{
+      width: 50%;
+      left: 20%;
+      right: 50%;
+      padding: 2rem;
+   }
+}
+
+@media only screen and (max-width:400px){
+   .main img{
+      width: 95%;
+   }
+
+   .itemPage{
+      display: flex;
+      flex-direction: column;
+      display: none;
+      margin-top: 2rem;
+      margin-left: 1.5rem;
+   }
+
+   .buyPage{
+      width: 50%;
+   }
+}
+
+@media only screen and (max-width:1000px){
+   .main{
+      display: block;
+      text-align: center;
+   }
+
+   .main img{
+      margin-top: 1rem;
+   }
+}
